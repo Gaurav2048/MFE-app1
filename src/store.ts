@@ -28,7 +28,7 @@ const filter = () => {
 };
 
 export const load = (client: string): void => {
-  fetch(`http://localhost:8080/${client}.json`)
+  fetch(`https://distracted-pare-ceb1c4.netlify.app/${client}.json`)
     .then((resp) => resp.json())
     .then((taps: Beverage[]) => {
       store.taps = taps;
